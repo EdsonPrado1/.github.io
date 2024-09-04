@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferência - VIRTUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="transfer-header">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/716/209/non_2x/flat-icon-bank-bank-icon-where-to-keep-money-illustration-of-saving-in-the-bank-free-png.png" alt="Logo do Banco">
+            <h1>V I R T U S - Transferência</h1>
+        </div>
+    </header>
+
+    <section class="transfer-form">
+        <h2>Realizar Transferência</h2>
+        <form>
+            <label for="tipo-conta">Tipo de Conta:</label>
+            <select id="tipo-conta" name="tipo-conta">
+                <option value="corrente">Corrente</option>
+                <option value="poupanca">Poupança</option>
+            </select>
+
+            <label for="banco-destino">Banco de Destino:</label>
+            <input type="text" id="banco-destino" placeholder="Ex: 001 - Banco do Brasil">
+
+            <label for="agencia-destino">Agência:</label>
+            <input type="text" id="agencia-destino">
+
+            <label for="conta-destino">Conta:</label>
+            <input type="text" id="conta-destino">
+
+            <button type="submit">Transferir</button>
+        </form>
+
+        <!-- Botão de Voltar -->
+        <button class="back-button" onclick="history.back()">Voltar</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Virtus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
