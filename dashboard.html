@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Conta - VIRTUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/716/209/non_2x/flat-icon-bank-bank-icon-where-to-keep-money-illustration-of-saving-in-the-bank-free-png.png" alt="Logo do Banco">
+            <h1>V I R T U S</h1>
+        </div>
+    </header>
+
+    <section class="account-dashboard">
+        <h2>Bem-vindo, [Nome do Cliente]</h2>
+        <div class="account-info">
+            <p>Saldo: R$ 5.000,00</p>
+            <p>Fatura do Cartão: R$ 1.200,00</p>
+        </div>
+
+        <div class="quick-actions">
+            <h3>Ações Rápidas</h3>
+            <button class="quick-action-btn transferencia-btn">Transferência</button>
+            <button class="quick-action-btn pix-btn">PIX</button>
+            <button class="quick-action-btn pagar-fatura">Pagar Fatura</button>
+        </div>
+    </section>
+
+    <!-- Modal para Pagamento de Fatura -->
+    <div id="faturaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Pagamento da Fatura</h2>
+            <p>Valor da Fatura: <strong>R$ 1.200,00</strong></p>
+            <p>Data de Vencimento: <strong>10/09/2024</strong></p>
+            <p>Escolha uma opção para continuar:</p>
+            <button class="modal-option">Parcelar Fatura</button>
+            <button class="modal-option">Gerar Boleto</button>
+            <button class="modal-option">Pagar por Pix</button>
+        </div>
+    </div>
+
+    <!-- Modal para Transferência -->
+    <div id="transferenciaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Transferência Bancária</h2>
+            <form>
+                <label for="tipoConta">Tipo de Conta:</label>
+                <select id="tipoConta" name="tipoConta">
+                    <option value="corrente">Conta Corrente</option>
+                    <option value="poupanca">Poupança</option>
+                    <option value="salario">Conta Salário</option>
+                </select>
+
+                <label for="bancoDestino">Banco de Destino:</label>
+                <input type="text" id="bancoDestino" name="bancoDestino" placeholder="Ex: Banco do Brasil">
+
+                <label for="agenciaDestino">Agência:</label>
+                <input type="text" id="agenciaDestino" name="agenciaDestino" placeholder="Número da Agência">
+
+                <label for="contaDestino">Conta:</label>
+                <input type="text" id="contaDestino" name="contaDestino" placeholder="Número da Conta">
+
+                <button type="submit" class="modal-option">Confirmar Transferência</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Virtus. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para exibir o modal de pagamento de fatura
+        const pagarFaturaBtn = document.querySelector('.pagar-fatura');
+        const faturaModal = document.getElementById('faturaModal');
+        const closeBtns = document.querySelectorAll('.close-btn');
+
+        pagarFaturaBtn.addEventListener('click', () => {
+            faturaModal.style.display = 'block';
+        });
+
+        // Função para exibir o modal de transferência
+        const transferenciaBtn = document.querySelector('.transferencia-btn');
+        const transferenciaModal = document.getElementById('transferenciaModal');
+
+        transferenciaBtn.addEventListener('click', () => {
+            transferenciaModal.style.display = 'block';
+        });
+
+        // Fechar modais ao clicar no botão de fechar
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.parentElement.parentElement.style.display = 'none';
+            });
+        });
+
+        // Fechar modal ao clicar fora dele
+        window.addEventListener('click', (event) => {
+            if (event.target === faturaModal || event.target === transferenciaModal) {
+                event.target.style.display = 'none';
+            }
+        });
+
+        // Função para navegar para a página de PIX
+        const pixBtn = document.querySelector('.pix-btn');
+        pixBtn.addEventListener('click', () => {
+            window.location.href = 'pix.html';
+        });
+    </script>
+</body>
+</html>

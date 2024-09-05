@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIX - VIRTUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="pix-header">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/716/209/non_2x/flat-icon-bank-bank-icon-where-to-keep-money-illustration-of-saving-in-the-bank-free-png.png" alt="Logo do Banco">
+            <h1>V I R T U S - PIX</h1>
+        </div>
+    </header>
+
+    <section class="pix-section">
+        <h2>Opções PIX</h2>
+        <div class="pix-options">
+            <button class="option-btn">Pagar ou Transferir</button>
+            <button class="option-btn">Ler um QR Code</button>
+            <button class="option-btn">Receber PIX</button>
+            <button class="option-btn">Minhas Chaves</button>
+        </div>
+
+        <!-- Chave PIX -->
+        <div class="pix-key-section">
+            <h3>Copiar Chave PIX</h3>
+            <input type="text" value="123.456.789-00" id="pix-key" readonly>
+            <button class="copy-btn" onclick="copyPixKey()">Copiar</button>
+        </div>
+
+        <!-- Histórico de Movimentação -->
+        <div class="pix-history">
+            <h3>Histórico de Movimentações</h3>
+            <ul>
+                <li>Recebido: R$ 500,00 - 02/09/2024</li>
+                <li>Pago: R$ 250,00 - 01/09/2024</li>
+            </ul>
+        </div>
+
+        <!-- Histórico de Cobranças -->
+        <div class="charge-history">
+            <h3>Histórico de Cobranças</h3>
+            <ul>
+                <li>Cobrança: R$ 100,00 - 31/08/2024</li>
+                <li>Cobrança: R$ 200,00 - 30/08/2024</li>
+            </ul>
+        </div>
+
+        <!-- Botão de Voltar -->
+        <button class="back-button" onclick="history.back()">Voltar</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Virtus. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function copyPixKey() {
+            const pixKey = document.getElementById('pix-key');
+            pixKey.select();
+            document.execCommand('copy');
+            alert('Chave PIX copiada!');
+        }
+    </script>
+</body>
+</html>
