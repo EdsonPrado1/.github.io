@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta - VIRTUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="conta-header">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/716/209/non_2x/flat-icon-bank-bank-icon-where-to-keep-money-illustration-of-saving-in-the-bank-free-png.png" alt="Logo do Banco">
+            <h1>V I R T U S - Minha Conta</h1>
+        </div>
+    </header>
+
+    <section class="account-dashboard">
+        <h2>Bem-vindo(a) à sua conta</h2>
+        <div class="account-info">
+            <p><strong>Saldo:</strong> R$ 5.000,00</p>
+            <p><strong>Fatura:</strong> R$ 2.000,00 - Vencimento: 15/09/2024</p>
+        </div>
+        
+        <div class="quick-actions">
+            <h3>Ações Rápidas</h3>
+            <button class="quick-action-btn" onclick="window.location.href='pagar-fatura.html'">Pagar Fatura</button>
+            <button class="quick-action-btn" onclick="window.location.href='pix.html'">PIX</button>
+            <button class="quick-action-btn" onclick="window.location.href='transferencia.html'">Transferência</button>
+        </div>
+        
+        <!-- Botão de Voltar -->
+        <button class="back-button" onclick="history.back()">Voltar</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Virtus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
