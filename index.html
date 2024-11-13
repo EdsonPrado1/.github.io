@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roleta de Vídeo</title>
+  <title>Roleta de Vídeo - Pause/Play</title>
   <style>
     /* Estilo da roleta e do botão */
     body {
@@ -50,12 +50,6 @@
     #spinButton:hover {
       background-color: #45a049;
     }
-
-    #result {
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
@@ -68,23 +62,24 @@
     </video>
   </div>
 
-  <button id="spinButton">Girar Roleta</button>
-  <div id="result"></div>
+  <button id="spinButton">Pause/Reproduzir</button>
 
   <script>
     const video = document.getElementById('rouletteVideo');
-    const result = document.getElementById('result');
+    const spinButton = document.getElementById('spinButton');
 
-    function spinRoulette() {
-      // Gera um tempo aleatório dentro da duração do vídeo e pausa o vídeo naquele momento
-      const randomTime = Math.random() * video.duration;
-      video.currentTime = randomTime;
-      video.pause();
-      result.textContent = `Vídeo pausado no tempo: ${randomTime.toFixed(2)} segundos`;
+    function togglePlayPause() {
+      if (video.paused) {
+        video.play();
+        spinButton.textContent = "Pause";
+      } else {
+        video.pause();
+        spinButton.textContent = "Reproduzir";
+      }
     }
 
     // Evento de clique no botão de girar
-    document.getElementById('spinButton').addEventListener('click', spinRoulette);
+    spinButton.addEventListener('click', togglePlayPause);
   </script>
 </body>
 </html>
