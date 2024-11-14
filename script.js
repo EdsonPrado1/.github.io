@@ -68,7 +68,7 @@ const champions = {
 
     const runes = ["Eletrucutar", "Colheita Sombria", "Chuva de Lâminas", "Aperto dos Mortos-Vivos", "Invocar Aery", "Ímpeto Gradual", 
     "Agilidade nos Pés", "Ritmo Fatal", "Pós-choque", "Guardião", "Primeiro Ataque", "Cometa Arcano", "Livro de Feitiços Deslacrado", "Aprimoramento Glacial"];
-    const spells = ["Flash", "Curar", "Ignite", "Exaustão", "Teleporte"];
+    const spells = ["Flash", "Curar", "Ignite", "Exaustão", "Teleporte", "Smite"];
     const items = ["Abyssal Mask", "Archangel's Staff", "Ardent Censer", "Axiom Arc", "Banshee's Veil", "Black Cleaver", "Blackfire Torch", "Blade of the Ruined King", "Bloodsong", "Bloodthirster", "Bounty of Worlds", "Celestial Opposition", "Chempunk Chainsword", "Cosmic Drive", "Cryptbloom", "Dawncore", "Dead Man's Plate", 
  "Death's Dance", "Dream Maker", "Echoes of Helia", "Eclipse", "Edge of Night", "Essence Reaver", "Experimental Hexplate", "Fimbulwinter", "Force of Nature", "Frozen Heart", "Guardian Angel", "Guinsoo's Rageblade", "Heartsteel", "Hextech Rocketbelt", "Hollow Radiance", "Horizon Focus", "Hubris", "Hullbreaker", "Iceborn Gauntlet", 
 "Immortal Shieldbow", "Imperial Mandate", "Infinity Edge", "Jak'Sho", "Kaenic Rookern", "Knight's Vow", "Kraken Slayer", "Liandry's Torment", "Lich Bane", "Locket of the Iron Solari", "Lord Dominik's Regard", "Luden's Companion", "Malignance", "Manamune", "Maw of Malmortius", "Mejai's Soulstealer", "Mercurial Scimitar", "Mikael's Blessing", 
