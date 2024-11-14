@@ -36,7 +36,7 @@ const champions = {
         "Gragas": ["Gragas.png"],
         "Graves": ["Graves.png"],
         "Hecarim": ["Hecarim.png"],
-        "Heimerdinger": ["Heimerdinger.png"],
+        "Heimer": ["Heimerdinger.png"],
         "Illaoi": ["Illaoi.png"],
         "Irelia": ["Irelia.png"],
         "Janna": ["Janna.png"],
