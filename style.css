@@ -122,3 +122,27 @@ body, h1, button, p {
   display: block;
   margin-top: 10px;
 }
+.champion-display {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Set it to exactly 5 columns */
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .champion-display {
+      grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .champion-display {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .champion-display {
+      grid-template-columns: 1fr; 
+  }
+}
