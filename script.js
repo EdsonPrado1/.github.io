@@ -1,5 +1,5 @@
 const champions = {
-        "Aatrox": ["aatrox1.png"],
+        "Aatrox": ["Aatrox.png"],
         "Ahri": ["Ahri.png"],
         "Akali": ["Akali.png"],
         "Alistar": ["Alistar.png"],
@@ -49,7 +49,7 @@ const champions = {
         "Katarina": ["Katarina.png"],
         "Kayle": ["Kayle.png"],
         "Kennen": ["Kennen.png"],
-        "Kha'Zix": ["Kha'zix.png"],
+        "Kha'Zix": ["Kha'Zix.png"],
         "Kindred": ["Kindred.png"],
         "Kled": ["Kled.png"],
         "Xin Zhao": ["Xin Zhao.png"],
