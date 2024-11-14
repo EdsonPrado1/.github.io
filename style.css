@@ -1,0 +1,124 @@
+/* Reseta estilos padrão */
+body, h1, button, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1f1f2e, #13131a);
+    color: #c9d1d9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #58a6ff;
+    text-shadow: 0 2px 8px rgba(88, 166, 255, 0.5);
+  }
+  
+  button {
+    background-color: #238636;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(35, 134, 54, 0.5);
+  }
+  
+  button:hover {
+    background-color: #2ea043;
+    transform: scale(1.05);
+  }
+  
+  .champion-display {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .champion {
+    background-color: #21262d;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .champion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .champion img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .champion img:hover {
+    transform: scale(1.08);
+  }
+  
+  .champion h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #f0f6fc;
+  }
+  
+  .details {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #8b949e;
+  }
+  
+  .details span {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .details span:first-child {
+    margin-top: 0;
+  }
+  
+  .details span::before {
+    content: "• ";
+    color: #58a6ff;
+  }
+  
+  footer {
+    background-color: #0d1117;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #8b949e;
+  }
+  /* Estilos anteriores */
+.lane {
+  font-weight: bold;
+  color: #444;
+  margin-top: 5px;
+}
+
+.role {
+  font-weight: bold;
+  color: #58a6ff;
+  display: block;
+  margin-top: 10px;
+}
