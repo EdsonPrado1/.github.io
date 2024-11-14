@@ -54,7 +54,7 @@ const champions = {
         "Kled": ["Kled.png"],
         "Xin Zhao": ["Xin Zhao.png"],
         "Kog'Maw": ["Kog'Maw.png"],
-        "LeBlanc": ["LeBlanc.png"],
+        "LeBlanc": ["Leblanc.png"],
         "Lee Sin": ["Lee Sin.png"],
         "Leona": ["Leona.png"],
         "Lillia": ["Lillia.png"],
